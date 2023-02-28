@@ -1,0 +1,28 @@
+// SuperDuck Example Script
+// This is an example of how one would write out and use my Intermediary DuckyScript language, SuperDuck
+// Robin Universe [R]
+// 02 . 28 . 23
+
+// Here's a comment
+
+repeat("TAB", 5)                    // Repeat TAB 5 times
+
+function DoAltTab(){                // Example function declaration
+    Delay(100)
+    Do("ALT TAB")
+}
+
+function DoThingAndAltTab(){        // Functions in Functions
+    DoAltTab
+    Type("Hello world!")
+}
+
+DoAltTab                            // Example function call
+
+Delay(100)                           // Delay 100ms
+
+Delay(1, Seconds)                    // Delay 1 Second (1000ms)
+
+Delay(1, Minutes)                    // Delay 1 minute (60,000ms)
+
+Type("Type Something out\n\nass")    // Interpret NewLines in Type as breaking up the STRING command and entering between them
